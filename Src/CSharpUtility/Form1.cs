@@ -33,5 +33,17 @@ namespace CSharpUtility
             textBox1.Text += strTmp;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDataGridvVew f = new FormDataGridvVew();
+            if(f.ShowDialog() == DialogResult.OK)
+            {
+                var pathes = f.Pathes;
+                foreach(var path in pathes)
+                {
+                    textBox1.Text += $"{path}\r\n";
+                }
+            }
+        }
     }
 }

@@ -63,7 +63,7 @@ namespace CSharpUtility
         /// <param name="szTrackBarSize">トラックバー領域のサイズ</param>
         public CustomTrackBar(int iTicksNum, int iThumbNum, Size szTrackBarSize)
         {
-            this.Location = new Point(50, 10);
+            this.Location = new Point(10, 10);
             this.Size = szTrackBarSize;
             this.m_iNumberTicks = iTicksNum;
             this.BackColor = Color.DarkCyan;
